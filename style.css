@@ -1,0 +1,82 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f3f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #ffdfba;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0.5rem 0;
+}
+
+.cat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cat-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 1rem;
+}
+
+.cat-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.cat-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ff9f1c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cat-card button:hover {
+  background-color: #ff7f00;
+}
+
+.feed-all {
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #2ec4b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.feed-all:hover {
+  background-color: #28a497;
+}
+
+footer {
+  background-color: #ffdfba;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cat-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

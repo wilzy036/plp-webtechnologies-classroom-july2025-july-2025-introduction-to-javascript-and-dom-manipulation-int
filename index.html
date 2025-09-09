@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed the Cats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🐱 Feed the Cats!</h1>
+    <p>Keep your cats happy by feeding them. Click the buttons below!</p>
+  </header>
+
+  <main>
+    <section class="cat-container">
+      <div class="cat-card">
+        <img src="https://www.purewow.com/family/fluffy-cat-breeds" alt="Fluffy">
+        <h2>Fluffy</h2>
+        <p id="Fluffy">Status: Hungry</p>
+        <button onclick="feedCat(cats[0])">Feed Fluffy</button>
+      </div>
+
+      <div class="cat-card">
+        <img src="https://www.fourpaws.com/pets-101/cat-corner/all-about-cat-whiskers" alt="Whiskers">
+        <h2>Whiskers</h2>
+        <p id="Whiskers">Status: Hungry</p>
+        <button onclick="feedCat(cats[1])">Feed Whiskers</button>
+      </div>
+
+      <div class="cat-card">
+        <img src="https://thecafemeow.com/wp-content/uploads/2023/02/Mittens-783x658.jpg" alt="Mittens">
+        <h2>Mittens</h2>
+        <p id="Mittens">Status: Hungry</p>
+        <button onclick="feedCat(cats[2])">Feed Mittens</button>
+      </div>
+    </section>
+
+    <section>
+      <button class="feed-all" onclick="feedAllCats()">Feed All Cats</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cat Feeding Assignment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
